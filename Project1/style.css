@@ -1,0 +1,19 @@
+#nav{
+    height: 60px;
+    display: flex;
+}
+
+#left-div{
+width: 20%;
+}
+
+#middle-div-wrapper{
+    width: 40%;
+    display: flex;
+
+}
+
+#right-div{
+    width: auto;
+
+}
