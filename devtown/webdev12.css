@@ -1,0 +1,113 @@
+body {
+    background-image: url("./bg.webp");
+    margin: 0;
+    height: 110vh;
+}
+
+header {
+    /* border: 2px  solid white; */
+    padding: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: sticky;
+    top: 0;
+}
+
+
+.logobox{
+  /*  border: 2px solid red; */
+    display: inline-block;
+    width: 120px;
+    font-size: large;
+    font-weight: 600px;
+    cursor: pointer;
+    transition: all 0.5s;
+ }
+ .logobox:hover{
+    color: salmon;
+ }
+ 
+
+.navbox{
+ /*   border: 2px solid green; */
+    width: 600px;
+    position: absolute;
+    right: 20px;
+    display: inline-block;
+
+ }
+ .navbox>a{
+    color: white;
+    margin: 20px;
+    text-align: none;
+    text-decoration: none;
+    transition: all 0.5s;
+ }
+
+ .navbox>a:hover{
+    color: salmon;
+ }
+
+ #homie{
+    color: salmon;
+ }
+
+ .heading {
+    color: salmon;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   /* border: 2px solid white; */
+    position: relative;
+    top: 60px;
+    left: 70px;
+    width: 500px;
+
+ }
+ .heading+h3{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   /* border: 2px solid white; */
+    font-size: 40px;
+    position: relative;
+    width: 500px;
+    left: 90px;
+
+ }
+ .heading+h3+p{
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  /*  border: 2px solid white; */ 
+    width: 400px;
+    word-spacing: 4px;
+    left: 80px;
+    font-style: italic;
+    top: 20px;
+    padding-left: 50 px;
+    font-size: large;
+
+ }
+ .btn{
+    width: 120px;
+    padding: 15px;
+   /* border: 2px solid salmon; */
+    background-color: salmon;
+    color: aliceblue;
+    font-family: 'Roboto';
+    position: relative;
+    top: 20px;
+    left: 80px;
+    font-weight: 600px;
+    cursor: pointer;
+    transition: all 0.5s;
+ }
+ .btn:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+ }
+
+ footer{
+    color: white;
+    font-family: 'Roboto';
+    position: fixed;
+    bottom: 0;
+ }

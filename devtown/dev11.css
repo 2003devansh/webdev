@@ -1,0 +1,10 @@
+ .container p:first-child {
+    color: red;
+ }
+ .container p:last-child {
+    color: blue;
+ }
+
+ .container p:nth-child(2) {
+    color: bisque;
+ }

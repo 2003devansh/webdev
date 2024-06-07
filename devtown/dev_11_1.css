@@ -1,0 +1,29 @@
+p::before {
+    content: "hello";
+    background-color: red;
+    color: white;
+    display: block;
+}
+
+p::after {
+    content: "world";
+    background-color: green;
+    color: white;
+    display: block;
+}
+
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    background-color: red;
+    transition-property: all;
+    transition-delay: 0.5s;
+}
+
+div:hover {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
