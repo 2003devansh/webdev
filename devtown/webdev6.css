@@ -1,0 +1,12 @@
+body {
+    font-size: 20px;
+    background-color: aquamarine;
+    background-attachment: fixed;
+    background-color: cover;
+    background-repeat: no-repeat;
+}
+
+ul{
+     list-style-type: square ; 
+     list-style-position: inside; 
+}

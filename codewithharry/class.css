@@ -1,0 +1,22 @@
+.child {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+wid {
+    display: flex;
+    width: auto;
+    flex-shrink: 2;
+}
+@media screen and (max-width:400px){
+    .container {
+        background-color: aquamarine;
+    }
+     .child{
+        background-color: blueviolet;
+     }
+    
+
+
+    }

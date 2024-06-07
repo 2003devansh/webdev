@@ -1,0 +1,19 @@
+.my-style {
+   background-color: blueviolet;
+   color: brown;
+   border: 6px dotted chocolate;
+}
+
+#my-id {
+   background-color: aqua;
+   color: burlywood;
+}
+
+p {
+   background-color: aquamarine;
+   color: beige;
+}
+
+h1 {
+   color: #000;
+}

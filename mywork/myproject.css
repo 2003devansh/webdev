@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    scroll-behavior: smooth;
+}
+
+nav{
+    height: 3vmax;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    display: flex;
+   background-color: grey; 
+ 
+   
+}
+
+.left{
+    
+    width: 20%;
+    display: flex;
+    justify-content: center;
+} 
+
+.left>img{
+    margin-left: 10px;
+    height: 100%;
+    
+}
+
+.mid{
+
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mid > a{
+    text-decoration: none;
+    justify-content: center;
+    color:  black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+ 
+}
+
+
+.mid > a:hover{
+    color: crimson;
+    border-bottom: 1px solid crimson;
+}
+
+
+.right{
+ 
+    width: 20%;
+  display: flex;
+}
+
+.layout{
+    height: 100vh;
+ 
+}
+
+
+.home{
+    height: 100vh;
+    background-color: rgb(69, 65, 65);
+ 
+    display: flex;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+#leftcontainer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2vmax;
+    align-items: center;
+   
+    margin-top: 7%;
+}
+
+#leftcontainer>h1{
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-bottom: 50px;
+}
+#leftcontainer>p{
+    font-size: x-large;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+#leftcontainer>h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 12.5px;
+}
+
+#leftcontainer>button{
+    width: 10vmax;
+    border: none;
+    border-radius: 3vmax;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#leftcontainer>button:hover{
+      color: black;
+      background-color: white;
+}
+#rightcontainer{
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+#rightcontainer > img{
+    height: 20vmax;
+
+}
+
+.container{
+    align-items: center;
+}
+
+#cars> h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: 2px solid  black;
+   padding: 1vmax;
+    color: black;
+    width: 25vmax;
+    margin: 2.5vmax auto;
+    cursor: pointer;
+}
+
+#carscontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.boom{
+    margin: 1vmax;
+    width: 22vmax;
+    height: 30vmax;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    
+}
+
+.boom > img {
+    width: 20vmax;
+ }
+
+ .boom > h4{
+    margin: 0px;
+ }
+ .boom > h5{
+    height: 0px;
+ }
+
+ .boom:hover{
+    transform: translateY(-10px);
+ }

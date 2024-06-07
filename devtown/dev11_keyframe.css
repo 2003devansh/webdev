@@ -1,0 +1,21 @@
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    animation: 10s abc infinite;
+    animation-delay: 3s;
+}
+
+@keyframes abc {
+    50%
+    {
+        margin-left: 500px;
+        background-color: red;
+    }
+    100%
+    {
+        margin-left: 500px;
+        background-color: black;
+        
+    }
+}

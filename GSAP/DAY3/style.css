@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: royalblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box{
+    width: 200px;
+    height: 200px;
+   background: crimson;
+}

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "webdevelop",
+			"path": "."
+		},
+		{
+			"name": "BOOKMYSHOWCLONE",
+			"path": "../Desktop/BOOKMYSHOWCLONE"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "webdevelop",
+		"liveServer.settings.port": 5501
+	}
+}

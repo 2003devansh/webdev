@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+}
+
+ nav{
+    height: 4vmax;
+    display: flex;
+    background-color: navy;
+    position: sticky;
+    top: 0%;
+ } 
+
+.left{
+   
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left > a{
+    font-size: 1.5vmax;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    cursor: pointer;
+
+}
+
+.left >a:hover {
+    color: red;
+  
+
+}
+
+.home{
+    
+    height: 50vmax;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+#leftcontainer{
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+}
+
+#leftcontainer>h1{
+    font-size: 3vmax;
+    font-family: 'Times New Roman', Times, serif;
+    color: crimson;
+    margin-left: 5px;
+    text-align: center;
+   
+   
+}
+#leftcontainer>h3{
+    font-size: 2vmax;
+    color: crimson;
+
+}
+#leftcontainer > p{
+    color: crimson;
+    font-size: larger;
+}
+
+#rightcontainer{
+   
+    display: flex;
+    justify-content: flex-end;
+}
+
+#rightcontainer> img {
+    margin-right: 7vmax;
+}
+
+.ultimate{
+    border: 2px solid red;
+    height: 50vmax;
+    background-color: black;
+    display: flex;
+}
+ #leftcard{
+    border: 2px solid green;
+    width: 33.33%;
+ }
+  #leftcard > img {
+    width: 20vw;
+    display: flex;
+    padding: 20%;
+    margin: 20%;
+
+    
+  }
+
+ #midcard{
+    width: 33.33%;
+    border: 2px solid green;
+ }
+ #rightcard{
+    width: 33.33%;
+    border: 2px solid green;
+ }
+
+

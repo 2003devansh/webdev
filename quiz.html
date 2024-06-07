@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin-top: 50px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    #quiz {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      margin-top: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div id="quiz">
+    <h1>Quiz Game</h1>
+    <p id="question"></p>
+    <div id="choices"></div>
+    <button onclick="nextQuestion()">Next Question</button>
+  </div>
+
+  <script>
+    const quizData = [
+      {
+        question: "What is the capital of France?",
+        choices: ["Paris", "London", "Berlin", "Madrid"],
+        correctAnswer: "Paris"
+      },
+      {
+        question: "Which planet is known as the Red Planet?",
+        choices: ["Venus", "Mars", "Jupiter", "Saturn"],
+        correctAnswer: "Mars"
+      },
+      // Add more quiz questions as needed
+    ];
+
+    let currentQuestion = 0;
+    let score = 0;
+
+    const questionElement = document.getElementById('question');
+    const choicesElement = document.getElementById('choices');
+
+    function showQuestion() {
+      const quizItem = quizData[currentQuestion];
+      questionElement.textContent = quizItem.question;
+
+      choicesElement.innerHTML = '';
+      quizItem.choices.forEach(choice => {
+        const button = document.createElement('button');
+        button.textContent = choice;
+        button.onclick = checkAnswer;
+        choicesElement.appendChild(button);
+      });
+    }
+
+    function checkAnswer(event) {
+      const selectedAnswer = event.target.textContent;
+      const correctAnswer = quizData[currentQuestion].correctAnswer;
+
+      if (selectedAnswer === correctAnswer) {
+        score++;
+      }
+
+      // Disable buttons after an answer is selected
+      const buttons = choicesElement.getElementsByTagName('button');
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].setAttribute('disabled', 'true');
+      }
+    }
+
+    function nextQuestion() {
+      currentQuestion++;
+
+      if (currentQuestion < quizData.length) {
+        showQuestion();
+      } else {
+        alert(`Quiz completed! Your score is ${score}/${quizData.length}`);
+        resetQuiz();
+      }
+    }
+
+    function resetQuiz() {
+      currentQuestion = 0;
+      score = 0;
+      showQuestion();
+    }
+
+    showQuestion();
+  </script>
+</body>
+</html>
